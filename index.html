@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farm</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="zoo.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="sidebar">
+    <h1 class="title">Farm</h1>
+    <br>
+    <div class="container" id="createAnimal">
+        <h1>Create an Animal:</h1>
+        <select id="types">
+            <option value="1">Pig</option>
+            <option value="2">Cow</option>
+            <option value="3">Chicken</option>
+            <option value="4">Goat</option>
+            <option value="5">Duck</option>
+            <option value="6">Sheep</option>
+            <option value="7">Tiger</option>
+            <option value="8">Elephant</option>
+        </select>
+        <input type="text" id="name" placeholder="your animal's name">
+        <br>
+        <button onClick="createAnimal()">Create!</button>
+        <h1>Delete an Animal:</h1>
+        <input type="text" id="idDeleted" placeholder="name of deleted">
+        <br>
+        <button onClick="idDeleted()">Delete!</button>
+    </div>
+    <br>
+    <div class="container" id="menu">
+        <h1>Feed the Animals:</h1>
+        <select id="food">
+            <option value="1">Vegetable Scraps</option>
+            <option value="2">Grass</option>
+            <option value="3">Poultry Feed</option>
+            <option value="4">Cheetos</option>
+            <option value="5">Steak</option>
+            <option value="6">Peanuts</option>
+        </select>
+        <br>
+        <button onClick="feedAnimals()">Feed!</button>
+    </div>
+    <br>
+    <div class="container" id="Animals">
+        <h1>Animals:</h1>
+        <p id="list"></p>
+    </div>
+    <br>
+    <br>
+    <div class="main" id="results">
+    <p id="feed"></p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url("img/farm background.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+#results{
+    display: none;
+    z-index: 2;
+}
+
+.container   {
+    background-color: #F0E2A3;
+    border: 2px solid #664E4C;
+    width: 300px;
+    margin: auto;
+    color: #664E4C;
+    text-align: center;
+    font-family: Avenir;
+}
+
+.sidebar {
+    height: 100%;
+    border: 2px solid #664E4C;
+    width: 350px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #C1D37F;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main {
+    z-index: 2;
+    margin-left: 340px;
+    margin-bottom: auto;
+    font-size: 30px;
+    font-family: Avenir;
+    color: #664E4C;
+    text-shadow: 1px 1px #F0E2A3, -1px 1px #F0E2A3, -1px -1px #F0E2A3, 1px -1px #F0E2A3;
+    padding: 0px 30px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.title {
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    font-family: Avenir;
+    color: #664E4C;
+}
+
+input {
+    padding: 1.5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #F0E2A3;
+    border: 2px solid #664E4C;
+    color: #664E4C;
+    font-family: Avenir;
+    font-size: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #F0E2A3;
+    border: 2px solid #664E4C;
+    color: #664E4C;
+    font-family: Avenir;
+    font-size: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 1.5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #F0E2A3;
+    border: 2px solid #664E4C;
+    color: #664E4C;
+    font-family: Avenir;
+    font-size: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 1px #664E4C;
+}
+
+button:hover {
+    background-color: #d4c68b;
+}
+
+button:active {
+    box-shadow: 0 0 #664E4C;
+    transform: translateY(1px);
+}
+
+/*custom scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d4c68b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F0E2A3;
+}
+
+div.main::-webkit-scrollbar {
+    display: none;
+}
